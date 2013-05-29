@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<!--登录-->
+	<bean name="loginAction" class="com.zqdy.action.LoginAction" parent="baseAction">
+		<property name="loginService">
+			<ref bean="loginService" />
+		</property>
+	</bean>
+	
+	<bean name="snatchAction" scope="request"  class="com.zqdy.action.SnatchAction" parent="baseAction">
+		<property name="snatchService">
+			<ref bean="snatchService" />
+		</property>
+	</bean>
+   
+   <bean name="modelAction" scope="request"  class="com.zqdy.action.ModelAction" parent="baseAction">
+		<property name="modelService">
+			<ref bean="modelService" />
+		</property>
+		<property name="snatchService">
+			<ref bean="snatchService" />
+		</property>
+	</bean>
+    <bean name="movieAction" scope="request"  class="com.zqdy.action.MovieAction" parent="baseAction">
+		<property name="movieService">
+			<ref bean="movieService" />
+		</property>
+		<property name="snatchService">
+			<ref bean="snatchService" />
+		</property>
+	</bean>
+   
+    <bean name="tvAction" scope="request"  class="com.zqdy.action.TvAction" parent="baseAction">
+		<property name="tvService">
+			<ref bean="tvService" />
+		</property>
+		 <property name="snatchService">
+			<ref bean="snatchService" />
+		</property>
+	</bean>
+	
+	
+	<bean name="indexAction" scope="request"  class="com.zqdy.action.IndexAction" parent="baseAction">
+		<property name="indexService">
+			<ref bean="indexService" />
+		</property> 
+		<property name="searchService">
+			<ref bean="searchService" />
+		</property> 
+	</bean>
+	
+	<bean name="searchAction" scope="request"  class="com.zqdy.action.SearchAction" parent="baseAction">
+		<property name="indexService">
+			<ref bean="indexService" />
+		</property> 
+		<property name="searchService">
+			<ref bean="searchService" />
+		</property> 
+		
+	</bean>
+	
+</beans>

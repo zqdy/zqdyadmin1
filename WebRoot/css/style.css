@@ -1,0 +1,448 @@
+@CHARSET "UTF-8";
+/* CSS Document for Cambridge EASOL by leguang */
+
+/* 公共 */
+body,td,th,input,select,textarea {
+	font-size: 11px;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body {
+	background-color: #FFFFFF;
+	margin: 0px;
+	background-image: url(../images/default/top_bg.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	height: 100%;
+}
+background {
+	background-color: #FFFFFF;
+	margin: 0px;	
+	background-repeat: repeat-x;
+	background-position: top;
+	height: 100%;
+}
+a {
+	color: #006699;
+	text-decoration: none;
+}
+a:hover {
+	color: #0099CC;
+	text-decoration: underline;
+}
+
+
+/* 字体 */
+.text_bold {
+	font-weight: bold;
+}
+.text_score {
+	font-weight: bold;
+	color: #FF0000;
+	font-size: 14px;
+}
+.text_login_title {
+	font-size: 22px;
+	font-weight: bold;
+}
+.text_login_title_s {
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 2px;
+	line-height: 30px; 
+}
+.text_red {
+	color: #FF0000;
+}
+.text_gray {
+	color: #CCCCCC;
+}
+.text_nodata{
+	color: #CCCCCC;
+}
+
+/* 头部 */
+.top_bg_00 {
+	background-image: url(../images/default/top_bg_1.gif);
+	height: 67px;
+	background-repeat: no-repeat;
+	text-align: right;
+	vertical-align: top;
+}
+
+/* 搜索 */
+.search {
+	padding: 16px 10px 10px 10px;
+}
+
+.search1 {
+	padding: 6px 10px 10px 10px;
+}
+.search_btn {
+	margin-left: -4px;
+}
+
+.search_left
+{
+    padding-left:10px; 
+    height:31px;   
+	}
+	
+.tdrightpadding
+{
+	padding-right:42px;
+}
+
+
+/* 底部 */
+.foot {
+	padding: 8px 10px 10px 10px;
+	border-top: 1px solid #CCCCCC;
+}
+
+/* 表格 */
+.body_table {
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+}
+.body_table_gl {
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-top: 0px;
+}
+.body_title {
+	padding-left: 10px;
+	font-weight: bold;
+	height: 27px;
+	background-image: url(../images/default/body_title.gif);
+}
+.body_title_gl {
+	padding-left: 10px;
+	font-weight: bold;
+	height: 28px;
+	background-image: url(../images/default/body_title.gif);
+	border-bottom: 1px solid #CCCCCC;
+}
+.tab {
+	border: 1px solid #FFB376;
+	background-color:#FFF7D8;
+
+}
+.body_td {
+	padding-left: 10px;
+	line-height: 24px;
+	border-top: 1px solid #CCCCCC;
+}
+.body_td_2 {
+	padding-left: 10px;
+	line-height: 24px;
+	border-top: 1px solid #CCCCCC;
+	padding-top:2px;
+	padding-left:6px;
+	padding-right:6px;
+	padding-bottom:2px;
+}
+.body_td2 {
+	padding-left: 10px;
+	line-height: 24px;
+}
+.body_td_none {
+	padding-left: 10px;
+	line-height: 22px;
+}
+.body_td_score {
+	padding-left: 10px;
+	line-height: 20px;
+}
+
+/* 表单 */
+/* 所有表单定义默认 */
+input,select
+{
+	padding: 2px 3px 0px 3px;
+	border: 1px solid #999999;
+	height:20px;
+}
+/* 利用鼠标事件 :hover 来定义当鼠标经过时样式 */
+input:hover,textarea:hover	{
+	background: #F0F9FB;
+	border: 1px solid #1D95C7;
+}
+/* 由于 :hover 事件只有 Mozilla 支持，因此为方便IE使用 expression 批量定义 */
+input,textarea {
+	tesion:expression(onmouseover=function() 
+	{this.style.backgroundColor="#F0F9FB";this.style.border="1px solid #1D95C7"}, 
+	onmouseout=function()
+	{this.style.backgroundColor="#FFFFFF";this.style.border="1px solid #999999"})
+}
+.btn {
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	padding: 1px 0px 1px 0px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#DDDDDD);
+}
+.btn_login {
+	background-color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;	
+	border: 1px solid #999999;
+	padding: 1px 0px 1px 0px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#DDDDDD);
+	width: 128px;
+	height:26px;
+}
+.body_checkbox,.body_checkbox:hover {
+	border: 0px;
+	tesion:expression(onmouseover=function() 
+	{this.style.backgroundColor="";this.style.border="0px";}, 
+	onmouseout=function()
+	{this.style.backgroundColor="";this.style.border="0px";})
+}
+
+.body_td input, .body_td input:hover, .body_title input, .body_title input:hover
+{
+	border: 0px;
+	tesion:expression(onmouseover=function() 
+	{this.style.backgroundColor="";this.style.border="0px";}, 
+	onmouseout=function()
+	{this.style.backgroundColor="";this.style.border="0px";})
+}
+.body_td2 input, .body_td2 input:hover
+{
+	border: 0px;
+	tesion:expression(onmouseover=function() 
+	{this.style.backgroundColor="";this.style.border="0px";}, 
+	onmouseout=function()
+	{this.style.backgroundColor="";this.style.border="0px";})
+}
+.body_td_border_top
+{
+	border-top: 1px solid #CCCCCC;
+}
+.body_td_border_top input
+{
+	border: 1px solid #999999;
+	tesion:expression(onmouseover=function() 
+	{this.style.backgroundColor="#F0F9FB";this.style.border="1px solid #1D95C7"}, 
+	onmouseout=function()
+	{this.style.backgroundColor="#FFFFFF";this.style.border="1px solid #999999"})
+}
+/* 翻页 */
+.pages {
+	padding: 5px 10px 25px 10px;
+}
+.pages_title {
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.pages_normal {
+	padding: 2px 5px 3px 5px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#EEEEEE);
+	border: 1px solid #CCCCCC;
+}
+.pages_normal a {
+	padding: 2px 3px 3px 5px;
+	color: #000000;
+}
+.pages_normal a:hover {
+	color: #000000;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	background-image: url(../images/default/pages_bg_on.gif);
+}
+.pages_normal_pagefocus {
+	color: #000000;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	background-image: url(../images/default/pages_bg_on.gif);
+}
+.pages_nonce {
+	padding: 2px 3px 3px 5px;
+	font-weight: bold;	
+}
+.pages_none {
+	padding: 2px 3px 3px 5px;
+	color: #999999;
+}
+.pages_minus_left {
+	margin-left: -10px;
+}
+.pages_btn {
+	margin-left: -4px;
+}
+
+/* 导航按钮 */
+.menu {
+}
+.menu_table {
+	background-image: url(../images/default/menu_line.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.menu .menu_left {
+	width: 10px;
+	border-right: 1px solid #CCCCCC;
+	padding: 6px 0px 6px 0px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.menu .menu_normal {
+	border-top: 1px solid #CCCCCC;	
+	border-right: 1px solid #CCCCCC;
+	padding: 6px 0px 6px 0px;
+	border-bottom: 1px solid #CCCCCC;
+	text-align: center;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#EEEEEE);
+}
+.menu .menu_normal a {
+	color: #000000;
+	text-decoration: none;
+	padding: 6px 20px 6px 20px;
+	border-bottom: 1px solid #CCCCCC;
+	blr: expression(this.onFocus=this.blur());
+}
+.menu .menu_normal a:hover{
+	color: #0099CC;
+	padding: 6px 20px 6px 20px;
+	text-decoration: none;
+	border-bottom: 1px solid #0099CC;	
+}
+.menu .menu_on {
+	font-size: 12px;
+	font-weight: bold;
+	border-top: 1px solid #CCCCCC;	
+	border-bottom: 1px solid #FFFFFF;	
+	border-right: 1px solid #CCCCCC;
+	text-align: center;
+	padding: 6px 20px 5px 20px;
+	background-color: #FFFFFF;
+}
+.menu .menu_on a:hover {
+	text-decoration: none;
+}
+.menu_right {
+	text-align: right;
+	padding: 0px 20px 0px 0px;
+}
+
+/* 弹出信息 */
+#msg_div_body {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+#msg_div_shadow {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	z-index:1;
+	filter: Alpha(Opacity=10);
+}
+#msg_div {
+	position: absolute;
+	background-color: #FFFFFF;
+	top: 50%;
+	left: 50%;
+	margin-left: -300px;
+	margin-top: -160px;
+	width: 600px;
+	border: 1px solid #999999;
+	padding: 10px;
+	text-align: left;
+	z-index:2;
+}
+#msg_div_info {
+	position: absolute;
+	background-color: #FFFFFF;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -150px;
+	width: 400px;
+	border: 1px solid #999999;
+	padding: 10px;
+	text-align: left;
+	z-index:2;
+}
+.btn_close, .btn_close a {
+	font-size: 16px;
+	font-weight: bold;
+}
+.btn_close a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+.txt_input3
+{
+	height:17px;
+}
+.red11 {
+	font-size: 12px;
+	color: #FF0000;
+}
+
+.table_1004{
+background-color:#B9D5D1;
+width:1004px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:5px;}
+.table_1004_c1{
+line-height:150%;
+background-color:#C7E7E9;
+font:12px "宋体";
+color:#094D42;
+font-weight:bold;
+text-align:center;}
+.table_1004_c12{
+line-height:150%;
+background-color:#E7F4F5;
+font:12px "宋体";
+color:#094D42;
+font-weight:bold;
+text-align:center;}
+.table_1004_c13{
+background-color:#F5FAFA;
+font:12px "宋体";
+color:#333;
+text-align:center;
+line-height:150%;}
+.table_1004_c13 a:visited { COLOR:#333; TEXT-DECORATION:none} 
+.table_1004_c13 a:link {  COLOR:#333; TEXT-DECORATION: none } 
+.table_1004_c13 a:hover {  COLOR:#FF0000;TEXT-DECORATION:none;position: relative; right: 0px; top: -2px ;}
+
+.table_1004_c14{
+line-height:150%;
+background-color:#F5FAFA;
+font:12px "宋体";
+color:#333333;
+text-align:left;}
+
+
+
+/*滑动门的样式*/
+UL{list-style-type:none; margin:0px;}
+/* 标准盒模型 */
+.ttl{height:18px;}
+.ctt{height:auto;padding:6px;clear:both;border:0px solid #064ca1;border-top:0;text-align:left;}
+.w936{margin:2px 0;clear:both;width:936px;/*这里调整整个滑动门的宽度*/}
+/* TAB 切换效果 */
+.tb_{ background-repeat: repeat-x;background-image: url('images/default/tbbg.jpg');}
+.tb_ ul{height:22px;}
+.tb_ li{float:left;height: 22px;line-height:1.9;width: 76px;cursor:pointer;}
+/* 用于控制显示与隐藏的css类 */
+.normaltab   { 
+background-image:url('images/default/title_out.jpg'); background-repeat: no-repeat; color:#1F3A87 ;
+text-align:center;}
+.hovertab    { background-image: url('images/default/title_over.jpg'); background-repeat: no-repeat; color:#990000; font-weight:bold;
+text-align:center;}
+.dis{display:block;}
+.undis{display:none;}
+

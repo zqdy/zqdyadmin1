@@ -1,0 +1,46 @@
+<urlrewrite>    
+	<rule> 
+		<from>/movie.html$</from> 
+		<to type= "forward">/movie.action</to> 
+	</rule> 
+	<rule>
+	    <from>^/m_([0-9]+).html$</from>	
+	    <to>/movieInfo.action?id=$1</to>	
+	 </rule>
+	 <rule>
+	    <from>^/m_([0-9]+)_([0-9]+).html$</from>	
+	    <to>/moviePlay.action?id=$1&amp;serverId=$2</to>	
+	 </rule>
+	 
+	  <rule>
+	    <from>^/m_([0-9]+)_([0-9]+)_([0-9]+)_([0-9]+)_([0-9]+).html$</from>	
+	    <to>/movieSearch.action?cpage=$1&amp;genre=$2&amp;area=$3&amp;source=$4&amp;year=$5</to>	
+	 </rule>
+
+	
+	<rule> 
+		<from>/tv.html$</from> 
+		<to type= "forward">/tv.action</to> 
+	</rule>
+	 <rule>
+	    <from>^/t_([0-9]+).html$</from>	
+	    <to>/tvInfo.action?id=$1</to>	
+	 </rule> 
+	 <rule>
+	    <from>^/t_([0-9]+)_([0-9]+).html$</from>	
+	    <to>/tvPlay.action?id=$1&amp;subTvId=$2</to>	
+	 </rule>
+	<rule>
+	    <from>^/t_([0-9]+)_([0-9]+)_([0-9]+)_([0-9]+)_([0-9]+).html$</from>	
+	    <to>/tvSearch.action?cpage=$1&amp;genre=$2&amp;area=$3&amp;source=$4&amp;year=$5</to>	
+	 </rule>
+	 
+	 <rule>
+	    <from>^/search/([a-zA-Z0-9%]+)$</from>	
+	    <to>/searchResult.action?keyword=$1</to>	
+	 </rule>
+	 <rule>
+	    <from>^/search/([0-9]+)_([0-9]+)_([a-zA-Z0-9-%]+)$</from>	
+	    <to>/searchResult.action?cpage=$1&amp;source=$2&amp;keyword=$3</to>	
+	 </rule>
+</urlrewrite> 

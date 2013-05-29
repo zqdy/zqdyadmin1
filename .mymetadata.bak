@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="zqdyadmin"
+  id="myeclipse.1248878251000"
+  context-root="/zqdyadmin"
+  j2ee-spec="5.0"
+  archive="zqdyadmin.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

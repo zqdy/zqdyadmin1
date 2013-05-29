@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="inde" namespace="" extends="struts-default">
+	 	<global-results>	 		 
+			<result name="noResult"  type="redirect-action">/indexPage</result>
+		</global-results>
+
+	 	<action name="indexPage" class="indexAction"  method="indexPage">
+            <result>/jsp/web/index.jsp</result>
+        </action> 
+        <action name="movieInfo" class="indexAction"  method="movieInfo">
+            <result>/jsp/web/movieDetail.jsp</result>
+        </action> 
+         <action name="moviePlay" class="indexAction"  method="moviePlay">
+            <result>/jsp/web/moviePlay.jsp</result>
+        </action> 
+        <action name="movie" class="indexAction"  method="movie">
+            <result>/jsp/web/movie.jsp</result>
+        </action>  
+        
+               
+         <action name="movieSearch" class="searchAction"  method="movieSearch">
+            <result>/jsp/web/movieSearch.jsp</result>
+        </action> 
+        
+         <action name="tv" class="indexAction"  method="tv">
+            <result>/jsp/web/tv.jsp</result>
+        </action>  
+        
+         <action name="tvInfo" class="indexAction"  method="tvInfo">
+            <result>/jsp/web/tvDetail.jsp</result>
+        </action> 
+        <action name="subPageInfo" class="indexAction"  method="subPageInfo">
+            <result>/jsp/web/tvDetail.jsp</result>
+        </action>      
+        
+        <action name="tvPlay" class="indexAction"  method="tvPlay">
+            <result>/jsp/web/tvPlay.jsp</result>
+        </action> 
+         <action name="tvSearch" class="searchAction"  method="tvSearch">
+            <result>/jsp/web/tvSearch.jsp</result>
+        </action> 
+        
+         <action name="search" class="searchAction"  method="searchResult">
+            <result>/jsp/web/result.jsp</result>
+        </action> 
+          
+    </package>
+    
+</struts>
